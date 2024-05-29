@@ -1,0 +1,32 @@
+.homepage {
+  width: 100%;
+  height: 85vh;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.heading {
+  text-align: center;
+  color: chocolate;
+}
+.product-image {
+  width: 250px;
+}
+.cartitems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cartitem {
+  border: 2px solid whitesmoke;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+}
+.cartitem h2 {
+  color: palevioletred;
+  margin-bottom: 10px;
+}
