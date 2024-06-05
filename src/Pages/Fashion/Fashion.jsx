@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ProductContext } from "../../Context/Productcontext";
+import Navbar from "../../Components/Navbar/Navbar";
+import ProductList from "../../Components/Productlist/ProductList";
 
 const Fashion = () => {
+  const { productData } = useContext(ProductContext);
+
+  const fashionData = productData.find(
+    ({ cat_name }) => cat_name === "Fashion"
+  );
+
   return (
     <>
-      <h1>Fashion</h1>
+      <Navbar />
+      <ProductList categoryData={fashionData} />
     </>
   );
 };

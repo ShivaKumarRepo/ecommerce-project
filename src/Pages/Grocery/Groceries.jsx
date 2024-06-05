@@ -3,19 +3,19 @@ import { ProductContext } from "../../Context/Productcontext";
 import Navbar from "../../Components/Navbar/Navbar";
 import ProductList from "../../Components/Productlist/ProductList";
 
-const Electronics = () => {
+const Groceries = () => {
   const { productData } = useContext(ProductContext);
 
-  const electronicsCategory = productData.find(
-    ({ cat_name }) => cat_name === "Electronics"
+  const groceryData = productData.find(
+    ({ cat_name }) => cat_name === "Groceries"
   );
 
   return (
     <>
       <Navbar />
-      <ProductList categoryData={electronicsCategory} />
+      <ProductList categoryData={groceryData} />
     </>
   );
 };
 
-export default Electronics;
+export default Groceries;
